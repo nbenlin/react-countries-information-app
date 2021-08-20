@@ -4,6 +4,8 @@ import {
   FilterControl,
   Label,
   Select,
+  Input,
+  InputFilter,
 } from "./CountriesFilterElements";
 
 const CountriesFilter = (props) => {
@@ -17,6 +19,10 @@ const CountriesFilter = (props) => {
   regions = regions.filter((region, index) => {
     return regions.indexOf(region) === index;
   });
+
+  const inputChangeHandler = (event) => {
+    props.onChangeInputFilter(event.target.value.toLowerCase());
+  };
 
   return (
     <Filter>
@@ -33,6 +39,10 @@ const CountriesFilter = (props) => {
           )}
         </Select>
       </FilterControl>
+      <InputFilter>
+        <Label>Filter country by name</Label>
+        <Input type="text" onChange={inputChangeHandler} />
+      </InputFilter>
     </Filter>
   );
 };

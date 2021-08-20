@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { List, Fallback } from "../CountriesList/CountriesListElements";
 import CountryItem from "../CountryItem";
 

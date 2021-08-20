@@ -31,3 +31,11 @@ export const Select = styled.select`
     outline: none;
   }
 `;
+
+export const InputFilter = styled.div`
+  margin: 10px;
+`;
+
+export const Input = styled.input`
+  margin: 5px;
+`;
