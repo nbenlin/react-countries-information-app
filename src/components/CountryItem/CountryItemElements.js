@@ -1,8 +1,12 @@
 import styled from "styled-components";
 
-export const ListItem = styled.li``;
+export const ListItem = styled.li`
+  margin: 5px;
+`;
 
-export const Card = styled.div``;
+export const Card = styled.div`
+  border: 1px solid gray;
+`;
 
 export const CardTitle = styled.h2``;
 

@@ -6,13 +6,14 @@ import {
   CardDescription,
 } from "./CountryItemElements";
 
-const CountryItem = () => {
+const CountryItem = (props) => {
+  // console.log("a,l", props.key);
   return (
     <ListItem>
       <Card>
-        <CardTitle>
-          <CardDescription></CardDescription>
-        </CardTitle>
+        <CardTitle></CardTitle>
+        <CardDescription>{props.name}</CardDescription>
+        <CardDescription>{props.population}</CardDescription>
       </Card>
     </ListItem>
   );

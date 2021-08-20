@@ -9,9 +9,10 @@ and then pass filtered items to <CountriesList items={filteredCountries} /> comp
 */
 
 const Countries = (props) => {
+  // console.log(props.items);
   return (
     <Card>
-      <CountriesList items={props.Countries} />
+      <CountriesList items={props.items} />
     </Card>
   );
 };
