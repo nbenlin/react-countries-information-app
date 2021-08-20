@@ -1,7 +1,12 @@
-import "./App.css";
+import Countries from "./components/Countries/";
 
 function App() {
-  return <div></div>;
+  return (
+    <>
+      <h1>BAE Recruitment Task</h1>
+      <Countries />
+    </>
+  );
 }
 
 export default App;
