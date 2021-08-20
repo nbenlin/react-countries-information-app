@@ -11,7 +11,7 @@ and then pass filtered items to <CountriesList items={filteredCountries} /> comp
 const Countries = (props) => {
   return (
     <Card>
-      <CountriesList items={Countries} />
+      <CountriesList items={props.Countries} />
     </Card>
   );
 };
