@@ -9,7 +9,6 @@ export const Card = styled.div`
   position: relative;
   -webkit-box-shadow: 2px 2px 18px 2px rgba(0, 0, 0, 0.25);
   box-shadow: 2px 2px 18px 2px rgba(0, 0, 0, 0.25);
-
   border-radius: 15px;
   height: 200px;
   width: 90%;

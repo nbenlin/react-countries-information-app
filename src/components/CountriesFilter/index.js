@@ -29,7 +29,7 @@ const CountriesFilter = (props) => {
     <Filter>
       <FilterControl>
         <SelectFilter>
-          <Label>Filter country by region</Label>
+          <Label>Filter country by region:</Label>
           <Select value={props.selected} onChange={dropdownChangeHandler}>
             {regions.map(
               (region) =>
@@ -42,8 +42,12 @@ const CountriesFilter = (props) => {
           </Select>
         </SelectFilter>
         <InputFilter>
-          <Label htmlFor="countryName">Filter country by name:</Label>
-          <Input type="text" id="countryName" onChange={inputChangeHandler} />
+          <Label htmlFor="countryNameFilter">Filter country by name:</Label>
+          <Input
+            type="text"
+            id="countryNameFilter"
+            onChange={inputChangeHandler}
+          />
         </InputFilter>
       </FilterControl>
     </Filter>
