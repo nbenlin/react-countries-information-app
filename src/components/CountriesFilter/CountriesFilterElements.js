@@ -29,7 +29,7 @@ export const Label = styled.label`
 export const Select = styled.select`
   width: 100%;
   height: 26px;
-  background: white;
+  background: ${COLORS.white};
   color: gray;
   padding-left: 5px;
   font-size: 15px;
@@ -37,19 +37,20 @@ export const Select = styled.select`
   margin-left: 10px;
   border-bottom: 1px solid black;
 
-  option {
-    color: black;
-    background: white;
-    display: flex;
-    white-space: pre;
-    height: 26px;
-    padding: 0px 2px 1px;
-    font-size: 14px;
-  }
-
   &:focus {
     outline: none;
   }
+`;
+
+export const Option = styled.option`
+  color: black;
+  background: white;
+  display: flex;
+  white-space: pre;
+  height: 26px;
+  padding: 0px 2px 1px;
+  font-size: 14px;
+  line-height: 4px;
 `;
 
 export const InputFilter = styled.div`

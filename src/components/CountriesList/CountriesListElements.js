@@ -35,12 +35,12 @@ export const ButtonWrap = styled.div`
 export const Button = styled.button`
   border: none;
   border-radius: 7px;
-  margin: 5px;
+  margin: 6px;
   padding: 7px 10px;
   cursor: pointer;
   color: ${COLORS.white};
   font-size: 16px;
-  background-color: ${COLORS.orange};
+  background-color: ${COLORS.dark};
   transition: all 0.1s ease-out;
   &:hover {
     transform: scale(1.1);

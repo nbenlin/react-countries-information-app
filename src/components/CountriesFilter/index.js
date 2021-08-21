@@ -4,6 +4,7 @@ import {
   FilterControl,
   Label,
   Select,
+  Option,
   Input,
   InputFilter,
   SelectFilter,
@@ -34,9 +35,9 @@ const CountriesFilter = (props) => {
             {regions.map(
               (region) =>
                 region !== "" && (
-                  <option key={region} value={region}>
+                  <Option key={region} value={region}>
                     {region}
-                  </option>
+                  </Option>
                 )
             )}
           </Select>
