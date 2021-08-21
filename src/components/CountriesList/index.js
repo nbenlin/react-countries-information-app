@@ -45,6 +45,7 @@ const CountriesList = (props) => {
         area={item.area}
         flag={item.flag}
         alpha3Code={item.alpha3Code}
+        latlng={item.latlng}
       />
     );
   });

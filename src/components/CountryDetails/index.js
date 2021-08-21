@@ -1,4 +1,5 @@
 import React from "react";
+import MyMapComponent from "../Map";
 import { Modal } from "../UI/Modal/ModelElements";
 import {
   CloseIcon,
@@ -12,6 +13,9 @@ import {
   CardBodyItem,
   Sup,
 } from "./CountryDetailsElements";
+
+/* ADD KEY TO .ENV !!! */
+const key = "AIzaSyDa-LkrBatpKYqNTQa-gu05GxDKCWCOm-M";
 
 const CountryDetails = (props) => {
   return (
@@ -47,6 +51,14 @@ const CountryDetails = (props) => {
           </CardBodyItem>
         </CardBody>
       </Card>
+      <MyMapComponent
+        coordinates={props.latlng}
+        isMarkerShown
+        googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=${key}`}
+        loadingElement={<div style={{ height: `300px` }} />}
+        containerElement={<div style={{ height: `300px` }} />}
+        mapElement={<div style={{ height: `300px` }} />}
+      />
     </Modal>
   );
 };

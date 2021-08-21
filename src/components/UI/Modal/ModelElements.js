@@ -12,14 +12,15 @@ export const BackdropWrap = styled.div`
 
 export const Modal = styled.div`
   position: fixed;
-  top: 30vh;
+  top: 14vh;
   left: 5%;
-  width: 90%;
-  height: 40%;
+  width: 100%;
+  height: 35vw;
   background-color: white;
   padding: 1rem;
   border-radius: 14px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 5px 5px 50px 20px rgba(0, 0, 0, 0.65);
+  box-shadow: 5px 5px 50px 20px rgba(0, 0, 0, 0.65);
   z-index: 30;
   animation: slide-down 300ms ease-out forwards;
 

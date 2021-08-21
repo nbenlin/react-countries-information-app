@@ -13,11 +13,10 @@ import CountryDetails from "../CountryDetails";
 const CountryItem = (props) => {
   const [detailsIsShown, setDetailsIsShown] = useState(false);
 
-  const showDetailsHandler = () => {
+  const showDetailsClickHandler = () => {
     setDetailsIsShown(true);
-    console.log("clicked");
   };
-  const hideDetilsHandler = () => {
+  const hideDetilsClickHandler = () => {
     setDetailsIsShown(false);
   };
 
@@ -32,10 +31,11 @@ const CountryItem = (props) => {
           population={props.population}
           area={props.area}
           flag={props.flag}
-          onCLose={hideDetilsHandler}
+          latlng={props.latlng}
+          onCLose={hideDetilsClickHandler}
         />
       )}
-      <Card onClick={showDetailsHandler}>
+      <Card onClick={showDetailsClickHandler}>
         <CardHeader>
           <CardTitle>{props.name}</CardTitle>
           <CardSubtitle>{props.alpha3Code}</CardSubtitle>
