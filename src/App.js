@@ -1,5 +1,6 @@
 import { Fragment, useEffect, useState } from "react";
 import Countries from "./components/Countries/";
+import InfoSection from "./components/Info";
 
 const App = () => {
   const [countriesData, setCountriesData] = useState([]);
@@ -17,7 +18,7 @@ const App = () => {
 
   return (
     <Fragment>
-      <h1>BAE Systems Recruitment Task</h1>
+      <InfoSection />
       <Countries items={countriesData} />
     </Fragment>
   );

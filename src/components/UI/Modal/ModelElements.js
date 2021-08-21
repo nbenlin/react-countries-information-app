@@ -12,7 +12,7 @@ export const BackdropWrap = styled.div`
 
 export const Modal = styled.div`
   position: fixed;
-  top: 20vh;
+  top: 30vh;
   left: 5%;
   width: 90%;
   height: 40%;

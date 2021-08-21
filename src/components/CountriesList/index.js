@@ -1,5 +1,11 @@
 import React, { useState } from "react";
-import { List, Fallback } from "./CountriesListElements";
+import {
+  List,
+  Fallback,
+  ButtonWrap,
+  Button,
+  ListWrap,
+} from "./CountriesListElements";
 import CountryItem from "../CountryItem";
 
 const CountriesList = (props) => {
@@ -38,25 +44,22 @@ const CountriesList = (props) => {
         subregion={item.subregion}
         area={item.area}
         flag={item.flag}
+        alpha3Code={item.alpha3Code}
       />
     );
   });
 
   const btns = [];
   for (let i = 1; i <= Math.ceil(items.length / itemsPerPage); i++) {
-    const elem = (
-      <span className="pagination-btn" onClick={() => changePage(i - 1)}>
-        {i}
-      </span>
-    );
+    const elem = <Button onClick={() => changePage(i - 1)}>{i}</Button>;
     btns.push(elem);
   }
 
   return (
-    <>
+    <ListWrap>
       <List>{listItems}</List>
-      <div>{btns}</div>
-    </>
+      <ButtonWrap>{btns}</ButtonWrap>
+    </ListWrap>
   );
 };
 

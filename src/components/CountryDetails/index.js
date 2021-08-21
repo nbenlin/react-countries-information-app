@@ -1,18 +1,52 @@
 import React from "react";
 import { Modal } from "../UI/Modal/ModelElements";
-import { CloseIcon } from "./CountryDetailsElements";
+import {
+  CloseIcon,
+  Card,
+  CardHeader,
+  Title,
+  SubTitle,
+  CardBody,
+  Paragraph,
+  Image,
+  CardBodyItem,
+  Sup,
+} from "./CountryDetailsElements";
 
 const CountryDetails = (props) => {
   return (
     <Modal>
       <CloseIcon onClick={props.onCLose} />
-      <p>{props.name}</p>
-      <p>{props.capital}</p>
-      <p>{props.region}</p>
-      <p>{props.subregion}</p>
-      <p>{props.population}</p>
-      <p>{props.area}</p>
-      <img src={props.flag} />
+      <Card>
+        <CardHeader>
+          <Title>{props.name}</Title>
+          <Image src={props.flag} alt={props.name} />
+        </CardHeader>
+        <CardBody>
+          <CardBodyItem>
+            <SubTitle>Capital city:</SubTitle>
+            <Paragraph>{props.capital}</Paragraph>
+          </CardBodyItem>
+          <CardBodyItem>
+            <SubTitle>Region:</SubTitle>
+            <Paragraph>{props.region}</Paragraph>
+          </CardBodyItem>
+          <CardBodyItem>
+            <SubTitle>Population:</SubTitle>
+            <Paragraph>{props.population}</Paragraph>
+          </CardBodyItem>
+          <CardBodyItem>
+            <SubTitle>Subregion:</SubTitle>
+            <Paragraph>{props.subregion}</Paragraph>
+          </CardBodyItem>
+          <CardBodyItem>
+            <SubTitle>Area:</SubTitle>
+            <Paragraph>
+              {props.area}km<Sup>2</Sup>
+            </Paragraph>
+          </CardBodyItem>
+        </CardBody>
+      </Card>
     </Modal>
   );
 };

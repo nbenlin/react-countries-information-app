@@ -6,6 +6,7 @@ import {
   Select,
   Input,
   InputFilter,
+  SelectFilter,
 } from "./CountriesFilterElements";
 
 const CountriesFilter = (props) => {
@@ -27,22 +28,24 @@ const CountriesFilter = (props) => {
   return (
     <Filter>
       <FilterControl>
-        <Label>Filter country by region</Label>
-        <Select value={props.selected} onChange={dropdownChangeHandler}>
-          {regions.map(
-            (region) =>
-              region !== "" && (
-                <option key={region} value={region}>
-                  {region}
-                </option>
-              )
-          )}
-        </Select>
+        <SelectFilter>
+          <Label>Filter country by region</Label>
+          <Select value={props.selected} onChange={dropdownChangeHandler}>
+            {regions.map(
+              (region) =>
+                region !== "" && (
+                  <option key={region} value={region}>
+                    {region}
+                  </option>
+                )
+            )}
+          </Select>
+        </SelectFilter>
+        <InputFilter>
+          <Label htmlFor="countryName">Filter country by name:</Label>
+          <Input type="text" id="countryName" onChange={inputChangeHandler} />
+        </InputFilter>
       </FilterControl>
-      <InputFilter>
-        <Label>Filter country by name</Label>
-        <Input type="text" onChange={inputChangeHandler} />
-      </InputFilter>
     </Filter>
   );
 };

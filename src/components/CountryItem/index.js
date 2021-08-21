@@ -2,7 +2,10 @@ import React, { useState } from "react";
 import {
   ListItem,
   Card,
+  CardHeader,
   CardTitle,
+  CardSubtitle,
+  CardBody,
   CardDescription,
 } from "./CountryItemElements";
 import CountryDetails from "../CountryDetails";
@@ -33,9 +36,13 @@ const CountryItem = (props) => {
         />
       )}
       <Card onClick={showDetailsHandler}>
-        <CardTitle>{props.capital}</CardTitle>
-        <CardDescription>{props.name}</CardDescription>
-        <CardDescription>{props.population}</CardDescription>
+        <CardHeader>
+          <CardTitle>{props.name}</CardTitle>
+          <CardSubtitle>{props.alpha3Code}</CardSubtitle>
+        </CardHeader>
+        <CardBody>
+          {/* <CardDescription>Capital city: {props.capital}</CardDescription> */}
+        </CardBody>
       </Card>
     </ListItem>
   );

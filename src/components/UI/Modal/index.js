@@ -1,6 +1,5 @@
 import React, { Fragment } from "react";
 import ReactDOM from "react-dom";
-import { Portal } from "react-is";
 import { BackdropWrap, Modal, Content } from "./ModelElements";
 
 const Backdrop = (props) => {
