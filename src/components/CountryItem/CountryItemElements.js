@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { COLORS } from "../../colors";
 
 export const ListItem = styled.li`
   margin: 5px;
@@ -6,10 +7,12 @@ export const ListItem = styled.li`
 
 export const Card = styled.div`
   position: relative;
+  -webkit-box-shadow: 2px 2px 18px 2px rgba(0, 0, 0, 0.25);
+  box-shadow: 2px 2px 18px 2px rgba(0, 0, 0, 0.25);
 
-  border: 1px solid gray;
-  border-radius: 5px;
+  border-radius: 15px;
   height: 200px;
+  width: 90%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -30,14 +33,20 @@ export const CardHeader = styled.div`
 
 export const CardBody = styled.div``;
 
-export const CardTitle = styled.h2``;
+export const CardTitle = styled.h2`
+  color: ${COLORS.black};
+`;
 export const CardSubtitle = styled.h3`
+  position: absolute;
   top: 10px;
   right: 10px;
-  position: absolute;
-  border: 1px solid black;
+  -webkit-box-shadow: 2px 1px 6px 1px #1d3557;
+  box-shadow: 2px 1px 6px 1px #1d3557;
+
+  color: ${COLORS.dark};
   border-radius: 50%;
-  padding: 15px;
+
+  padding: 8px;
 `;
 
 export const CardDescription = styled.p``;

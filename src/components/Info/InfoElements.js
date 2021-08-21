@@ -16,10 +16,16 @@ export const Header = styled.div`
 export const Title = styled.h1`
   padding: 28px 10px 30px 60px;
   font-size: 34px;
-  color: ${COLORS.dark};
+  color: ${COLORS.primary};
 `;
 
 export const WorldIcon = styled(GiWorld)`
-  font-size: 44px;
-  color: ${COLORS.blue};
+  color: ${COLORS.lightWater};
+  border-bottom-left-radius: 55% 100%;
+  border-bottom-right-radius: 55% 100%;
+  border-top-left-radius: 55% 100%;
+  border-top-right-radius: 55% 100%;
+  background: ${COLORS.water};
+  width: 45px;
+  height: 45px;
 `;

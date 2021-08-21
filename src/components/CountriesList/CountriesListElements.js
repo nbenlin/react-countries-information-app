@@ -2,18 +2,23 @@ import styled from "styled-components";
 import { COLORS } from "../../colors";
 
 export const Fallback = styled.h2`
-  color: red;
-  text-align: center;
+  color: ${COLORS.red};
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 `;
 
 export const ListWrap = styled.div`
   display: flex;
   flex-direction: column;
+  margin-top: 20px;
+  grid-gap: 10px;
 `;
 
 export const List = styled.ul`
   list-style: none;
-  padding: 0;
+  padding: 10px;
   color: black;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;

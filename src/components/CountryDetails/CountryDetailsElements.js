@@ -45,7 +45,7 @@ export const Paragraph = styled.p`
 
 export const Image = styled.img`
   width: 20%;
-  height: auto;
+  height: 100px;
   border-radius: 7px;
 `;
 

@@ -1,16 +1,18 @@
 import styled from "styled-components";
+import { COLORS } from "../../../colors";
 
 export const CardContainer = styled.div`
   margin: 50px 150px;
   padding: 14px 40px;
   border-radius: 12px;
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
+  height: 80vh;
 `;
 
 export const CardTitle = styled.h2`
   padding: 0px 20px;
   position: relative;
-  color: #da032c;
+  color: ${COLORS.dark};
   font-size: 24px;
   font-weight: 600;
   letter-spacing: 1px;
@@ -20,10 +22,11 @@ export const CardTitle = styled.h2`
   &::before {
     content: "";
     position: absolute;
-    left: 50px;
+    left: 60px;
     bottom: -10px;
     width: 150px;
-    height: 4px;
-    background: black;
+    height: 1.5px;
+    background: ${COLORS.dark};
+    border-radius: 20px;
   }
 `;
