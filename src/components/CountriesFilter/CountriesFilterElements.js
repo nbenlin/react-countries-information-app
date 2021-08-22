@@ -66,7 +66,8 @@ export const InputFilter = styled.div`
 export const Label = styled.label`
   width: 60%;
   cursor: pointer;
-  font-size: 21px;
+  font-size: 20px;
+  color: ${COLORS.dark};
 
   @media screen and (max-width: 1366px) {
     font-size: 18px;
@@ -97,6 +98,7 @@ export const Select = styled.select`
   font-size: 19px;
   border: none;
   border-bottom: 1px solid ${COLORS.black};
+  cursor: pointer;
 
   &:focus {
     outline: none;
