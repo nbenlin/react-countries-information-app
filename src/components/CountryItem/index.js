@@ -6,7 +6,6 @@ import {
   CardTitle,
   CardSubtitle,
   CardBody,
-  CardDescription,
 } from "./CountryItemElements";
 import CountryDetails from "../CountryDetails";
 
@@ -40,9 +39,7 @@ const CountryItem = (props) => {
           <CardTitle>{props.name}</CardTitle>
           <CardSubtitle>{props.alpha3Code}</CardSubtitle>
         </CardHeader>
-        <CardBody>
-          {/* <CardDescription>Capital city: {props.capital}</CardDescription> */}
-        </CardBody>
+        <CardBody></CardBody>
       </Card>
     </ListItem>
   );

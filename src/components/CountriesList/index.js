@@ -52,7 +52,11 @@ const CountriesList = (props) => {
 
   const btns = [];
   for (let i = 1; i <= Math.ceil(items.length / itemsPerPage); i++) {
-    const elem = <Button onClick={() => changePage(i - 1)}>{i}</Button>;
+    const elem = (
+      <Button key={i} onClick={() => changePage(i - 1)}>
+        {i}
+      </Button>
+    );
     btns.push(elem);
   }
 

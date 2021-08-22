@@ -56,6 +56,7 @@ const CountryDetails = (props) => {
       </Card>
       <MyMapComponent
         coordinates={props.latlng}
+        itemKey={props.name}
         isMarkerShown
         googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=${key}`}
         loadingElement={<LoadingElement />}

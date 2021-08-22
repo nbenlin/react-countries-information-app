@@ -9,10 +9,13 @@ const MyMapComponent = withScriptjs(
   withGoogleMap((props) => {
     let latitude = props.coordinates[0];
     let longtitude = props.coordinates[1];
+    const key = props.itemKey + "Key";
+    const key2 = props.itemKey + "Key2";
     return (
       <>
         {props.coordinates.map((coordinate) => (
           <GoogleMap
+            key={key}
             defaultZoom={5}
             defaultCenter={{
               lat: latitude,
@@ -20,7 +23,7 @@ const MyMapComponent = withScriptjs(
             }}
           >
             <Marker
-              key={coordinate[0]}
+              key={key2}
               position={{
                 lat: latitude,
                 lng: longtitude,
