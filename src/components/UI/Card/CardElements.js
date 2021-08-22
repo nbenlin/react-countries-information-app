@@ -2,11 +2,16 @@ import styled from "styled-components";
 import { COLORS } from "../../../colors";
 
 export const CardContainer = styled.div`
+  position: relative;
   margin: 50px 150px;
   padding: 14px 40px;
-  border-radius: 12px;
-  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
   height: 80vh;
+
+  @media screen and (max-width: 1024px) {
+    margin: 25px 75px;
+    padding: 14px 40px;
+    height: 80vh;
+  }
 `;
 
 export const CardTitle = styled.h2`
@@ -16,7 +21,7 @@ export const CardTitle = styled.h2`
   font-size: 24px;
   font-weight: 600;
   letter-spacing: 1px;
-  margin-top: 40px;
+  margin-top: 20px;
   margin-bottom: 40px;
 
   &::before {

@@ -12,6 +12,9 @@ import {
   Image,
   CardBodyItem,
   Sup,
+  LoadingElement,
+  ContainerElement,
+  MapElement,
 } from "./CountryDetailsElements";
 
 /* ADD KEY TO .ENV !!! */
@@ -55,9 +58,9 @@ const CountryDetails = (props) => {
         coordinates={props.latlng}
         isMarkerShown
         googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=${key}`}
-        loadingElement={<div style={{ height: `300px` }} />}
-        containerElement={<div style={{ height: `300px` }} />}
-        mapElement={<div style={{ height: `300px` }} />}
+        loadingElement={<LoadingElement />}
+        containerElement={<ContainerElement />}
+        mapElement={<MapElement />}
       />
     </Modal>
   );

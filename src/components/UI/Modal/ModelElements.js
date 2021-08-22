@@ -13,8 +13,8 @@ export const BackdropWrap = styled.div`
 export const Modal = styled.div`
   position: fixed;
   top: 14vh;
-  left: 5%;
-  width: 100%;
+  left: 30%;
+  width: 40%;
   height: 35vw;
   background-color: white;
   padding: 1rem;
@@ -34,9 +34,18 @@ export const Modal = styled.div`
       transform: translateY(0);
     }
   }
-  @media (min-width: 768px) {
+  /* @media (min-width: 768px) {
     width: 40rem;
     left: calc(50% - 20rem);
+  } */
+
+  @media screen and (max-width: 768px) {
+    width: 50%;
+    left: calc(50% - 190px);
+    top: 15vh;
+    height: 75vw;
+    -webkit-box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.65);
+    box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.65);
   }
 `;
 

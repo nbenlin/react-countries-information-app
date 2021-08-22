@@ -16,6 +16,7 @@ export const CloseIcon = styled(AiFillCloseSquare)`
 export const Card = styled.div`
   display: flex;
   flex-direction: column;
+  width: 100%;
 `;
 
 export const CardHeader = styled.div`
@@ -45,10 +46,35 @@ export const Paragraph = styled.p`
 
 export const Image = styled.img`
   width: 20%;
-  height: 100px;
+  /* height: 100px; */
+  height: auto;
   border-radius: 7px;
 `;
 
 export const Sup = styled.sup`
   font-size: 8px;
+`;
+
+export const LoadingElement = styled.div`
+  height: 280px;
+  border-radius: 7px;
+  @media screen and (max-width: 768px) {
+    height: 190px;
+  }
+`;
+
+export const ContainerElement = styled.div`
+  height: 280px;
+  border-radius: 7px;
+  @media screen and (max-width: 768px) {
+    height: 190px;
+  }
+`;
+
+export const MapElement = styled.div`
+  height: 280px;
+  border-radius: 7px;
+  @media screen and (max-width: 768px) {
+    height: 190px;
+  }
 `;
