@@ -1,8 +1,8 @@
 import { render, screen } from "@testing-library/react";
-import InfoSection from "./index";
+import InfoSection from "./";
 
 describe("InfoSection component", () => {
-  test("renders Explore Countries of the world as a text", () => {
+  test("should render InfoSection component", () => {
     // Arrange
     render(<InfoSection />);
 
