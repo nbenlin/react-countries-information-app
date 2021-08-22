@@ -2,7 +2,17 @@ import styled from "styled-components";
 import { COLORS } from "../../colors";
 
 export const ListItem = styled.li`
-  /* margin: 5px; */
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media screen and (max-width: 1024px) {
+    margin: 5px;
+  }
+
+  @media screen and (max-width: 768px) {
+    margin: 10px;
+  }
 `;
 
 export const Card = styled.div`
@@ -11,7 +21,7 @@ export const Card = styled.div`
   box-shadow: 2px 2px 18px 2px rgba(0, 0, 0, 0.25);
   border-radius: 15px;
   width: 100%;
-  height: 18vw;
+  height: 12vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -20,6 +30,18 @@ export const Card = styled.div`
   transition: 0.1s all ease-out;
   &:hover {
     transform: scale(1.015);
+  }
+
+  @media screen and (max-width: 1024px) {
+    height: 20vw;
+  }
+
+  @media screen and (max-width: 768px) {
+    height: 30vw;
+  }
+
+  @media screen and (max-width: 480px) {
+    height: 38vw;
   }
 `;
 
@@ -33,9 +55,15 @@ export const CardHeader = styled.div`
 export const CardBody = styled.div``;
 
 export const CardTitle = styled.h2`
+  font-size: 26px;
   color: ${COLORS.black};
+
+  @media screen and (max-width: 1024px) {
+    font-size: 22px;
+  }
+
   @media screen and (max-width: 768px) {
-    font-size: 20px;
+    font-size: 17px;
     padding: 0 10px;
     align-items: center;
     text-align: center;
@@ -51,8 +79,20 @@ export const CardSubtitle = styled.h3`
   color: ${COLORS.dark};
   border-radius: 50%;
   padding: 8px;
-  @media screen and (max-width: 768px) {
+  font-size: 18px;
+
+  @media screen and (max-width: 1024px) {
     font-size: 14px;
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: 11px;
+    padding: 4px;
+  }
+
+  @media screen and (max-width: 576px) {
+    font-size: 9px;
+    padding: 2px;
   }
 `;
 

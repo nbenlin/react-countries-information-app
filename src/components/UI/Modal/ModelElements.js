@@ -12,7 +12,7 @@ export const BackdropWrap = styled.div`
 
 export const Modal = styled.div`
   position: fixed;
-  top: 14vh;
+  top: 20vh;
   left: 30%;
   width: 40%;
   height: 35vw;
@@ -34,18 +34,52 @@ export const Modal = styled.div`
       transform: translateY(0);
     }
   }
-  /* @media (min-width: 768px) {
-    width: 40rem;
-    left: calc(50% - 20rem);
-  } */
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1440px) {
     width: 50%;
-    left: calc(50% - 190px);
-    top: 15vh;
-    height: 75vw;
+    left: calc(50% - 350px);
+    top: 18vw;
+    height: 44vw;
     -webkit-box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.65);
     box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.65);
+  }
+  @media screen and (max-width: 1220px) {
+    left: calc(50% - 300px);
+    top: 18vw;
+    height: 50vw;
+  }
+
+  @media screen and (max-width: 1024px) {
+    left: calc(50% - 265px);
+    top: 20vw;
+    height: 60vw;
+  }
+
+  @media screen and (max-width: 768px) {
+    left: calc(50% - 238px);
+    top: 20vh;
+    height: 80vw;
+    width: 62%;
+  }
+
+  @media screen and (max-width: 576px) {
+    left: calc(50% - 165px);
+    top: 21vh;
+    height: 100vw;
+    width: 60%;
+  }
+
+  @media screen and (max-width: 480px) {
+    left: calc(50% - 165px);
+    top: 19vh;
+    height: 150vw;
+    width: 70%;
+  }
+  @media screen and (max-width: 360px) {
+    left: calc(50% - 140px);
+    top: 18vh;
+    height: 150vw;
+    width: 80%;
   }
 `;
 

@@ -23,11 +23,20 @@ export const List = styled.ul`
   color: black;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 15px;
-  padding: 10px 10px;
+  grid-gap: 10px;
+  padding: 10px 20px;
 
   @media screen and (max-width: 1024px) {
     grid-gap: 15px;
+  }
+
+  @media screen and (max-width: 576px) {
+    grid-gap: 0px;
+  }
+
+  @media screen and (max-width: 480px) {
+    grid-template-columns: 2fr 2fr;
+    padding: 0;
   }
 `;
 
@@ -38,31 +47,52 @@ export const ButtonWrap = styled.div`
   align-items: center;
   height: 6vw;
   padding: 10px;
-
-  margin-top: 60px;
-  top: 50%;
+  top: 100%;
   left: 50%;
   /* bring your own prefixes */
-  transform: translate(-50%, 235%);
+  transform: translate(-50%, -20%);
 
   @media screen and (max-width: 1024px) {
-    top: 89%;
+    top: 100%;
     left: 50%;
-    transform: translate(-50%, 0%);
+    transform: translate(-50%, 20%);
   }
 `;
 
 export const Button = styled.button`
   border: none;
   border-radius: 7px;
-  margin: 6px;
+  margin: 5px;
   padding: 7px 10px;
   cursor: pointer;
   color: ${COLORS.white};
-  font-size: 16px;
+  font-size: 18px;
   background-color: ${COLORS.dark};
   transition: all 0.1s ease-out;
   &:hover {
     transform: scale(1.1);
+  }
+  @media screen and (max-width: 1024px) {
+    margin: 3px;
+    padding: 6px 9px;
+    font-size: 15px;
+  }
+
+  @media screen and (max-width: 576px) {
+    margin: 3px;
+    padding: 4px 7px;
+    font-size: 14px;
+  }
+
+  @media screen and (max-width: 480px) {
+    margin: 15px 2px 0px 2px;
+    padding: 4px 7px;
+    font-size: 12px;
+  }
+
+  @media screen and (max-width: 360px) {
+    margin: 2px;
+    padding: 3px 6px;
+    font-size: 13px;
   }
 `;

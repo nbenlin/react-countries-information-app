@@ -56,25 +56,76 @@ export const Sup = styled.sup`
 `;
 
 export const LoadingElement = styled.div`
-  height: 280px;
+  height: 70%;
   border-radius: 7px;
+  width: 100%;
+  @media screen and (max-width: 2200px) {
+    height: 68%;
+  }
+
+  @media screen and (max-width: 1980px) {
+    height: 60%;
+  }
+
+  @media screen and (max-width: 1580px) {
+    height: 52%;
+  }
+  @media screen and (max-width: 1380px) {
+    height: 47%;
+  }
+  @media screen and (max-width: 1220px) {
+    height: 43%;
+  }
+
   @media screen and (max-width: 768px) {
     height: 190px;
   }
 `;
 
 export const ContainerElement = styled.div`
-  height: 280px;
+  height: 70%;
   border-radius: 7px;
-  @media screen and (max-width: 768px) {
-    height: 190px;
+  width: 100%;
+
+  @media screen and (max-width: 2200px) {
+    height: 68%;
+  }
+
+  @media screen and (max-width: 1980px) {
+    height: 60%;
+  }
+
+  @media screen and (max-width: 1580px) {
+    height: 52%;
+  }
+  @media screen and (max-width: 1380px) {
+    height: 47%;
+  }
+  @media screen and (max-width: 1220px) {
+    height: 43%;
   }
 `;
 
 export const MapElement = styled.div`
-  height: 280px;
+  height: 70%;
   border-radius: 7px;
-  @media screen and (max-width: 768px) {
-    height: 190px;
+  width: 100%;
+
+  @media screen and (max-width: 2200px) {
+    height: 68%;
+  }
+
+  @media screen and (max-width: 1980px) {
+    height: 60%;
+  }
+
+  @media screen and (max-width: 1580px) {
+    height: 52%;
+  }
+  @media screen and (max-width: 1380px) {
+    height: 47%;
+  }
+  @media screen and (max-width: 1220px) {
+    height: 80%;
   }
 `;
