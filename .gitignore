@@ -1,5 +1,15 @@
-# Created by https://www.toptal.com/developers/gitignore/api/react
-# Edit at https://www.toptal.com/developers/gitignore?templates=react
+
+# Created by https://www.toptal.com/developers/gitignore/api/firebase,react
+# Edit at https://www.toptal.com/developers/gitignore?templates=firebase,react
+
+### Firebase ###
+.idea
+**/node_modules/*
+**/.firebaserc
+
+### Firebase Patch ###
+.runtimeconfig.json
+.firebase/
 
 ### react ###
 .DS_*
@@ -17,4 +27,4 @@ psd
 thumb
 sketch
 
-# End of https://www.toptal.com/developers/gitignore/api/react
+# End of https://www.toptal.com/developers/gitignore/api/firebase,react
