@@ -18,8 +18,7 @@ import {
 } from "./CountryDetailsElements";
 
 /* ADD KEY TO .ENV !!! */
-const key = "AIzaSyDa-LkrBatpKYqNTQa-gu05GxDKCWCOm-M";
-
+const key = "AIzaSyAt2Rvv2QN6YJD9r4TrWXeY6CzSdeU8WHY";
 const CountryDetails = (props) => {
   return (
     <Modal>
@@ -58,7 +57,7 @@ const CountryDetails = (props) => {
         coordinates={props.latlng}
         itemKey={props.name}
         isMarkerShown
-        googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=${key}`}
+        googleMapURL={`https://maps.googleapis.com/maps/api/js?key=${key}&callback=initMap`}
         loadingElement={<LoadingElement />}
         containerElement={<ContainerElement />}
         mapElement={<MapElement />}
