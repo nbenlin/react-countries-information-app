@@ -71,14 +71,14 @@ export const Modal = styled.div`
 
   @media screen and (max-width: 480px) {
     left: calc(50% - 165px);
-    top: 19vh;
-    height: 150vw;
-    width: 70%;
-  }
-  @media screen and (max-width: 360px) {
-    left: calc(50% - 140px);
     top: 18vh;
-    height: 150vw;
+    height: 140vw;
+    width: 80%;
+  }
+  @media screen and (max-width: 375px) {
+    left: calc(50% - 150px);
+    top: 18vh;
+    height: 135vw;
     width: 80%;
   }
 `;

@@ -23,10 +23,10 @@ export const Title = styled.h1`
   }
 
   @media screen and (max-width: 480px) {
-    font-size: 24px;
+    font-size: 20px;
   }
 
-  @media screen and (max-width: 360px) {
+  @media screen and (max-width: 375px) {
     font-size: 20px;
     padding: 28px 10px 30px 30px;
   }
