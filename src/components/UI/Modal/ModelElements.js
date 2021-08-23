@@ -75,6 +75,12 @@ export const Modal = styled.div`
     height: 140vw;
     width: 80%;
   }
+  @media screen and (max-width: 400px) {
+    left: calc(50% - 164px);
+    top: 18vh;
+    height: 125vw;
+    width: 82%;
+  }
   @media screen and (max-width: 375px) {
     left: calc(50% - 150px);
     top: 18vh;
