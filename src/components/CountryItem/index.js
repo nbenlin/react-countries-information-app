@@ -23,21 +23,21 @@ const CountryItem = (props) => {
     <ListItem>
       {detailsIsShown && (
         <CountryDetails
-          name={props.name}
-          capital={props.capital}
-          region={props.region}
-          subregion={props.subregion}
-          population={props.population}
-          area={props.area}
-          flag={props.flag}
-          latlng={props.latlng}
+          name={props.items.name}
+          capital={props.items.capital}
+          region={props.items.region}
+          subregion={props.items.subregion}
+          population={props.items.population}
+          area={props.items.area}
+          flag={props.items.flag}
+          latlng={props.items.latlng}
           onCLose={hideDetilsClickHandler}
         />
       )}
       <Card onClick={showDetailsClickHandler}>
         <CardHeader>
-          <CardTitle>{props.name}</CardTitle>
-          <CardSubtitle>{props.alpha3Code}</CardSubtitle>
+          <CardTitle>{props.items.name}</CardTitle>
+          <CardSubtitle>{props.items.alpha3Code}</CardSubtitle>
         </CardHeader>
         <CardBody></CardBody>
       </Card>
